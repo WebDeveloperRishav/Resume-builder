@@ -235,3 +235,72 @@ ul {
 ul>li {
     margin-bottom: 10px;
 }
+
+.col_2 {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.col_2>.section {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.border_right {
+    border-right: 1px solid var(--navyblue);
+}
+
+.skills ul {
+    margin-top: 10px;
+}
+
+.skills ul>li {
+    display: flex;
+    align-items: center;
+}
+
+.skills ul>li>i {
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+.section>ul {
+    margin-top: 10px;
+}
+
+.project>ul>li>p,
+.hobbies>ul>li>p,
+.education>ul>li>p {
+    margin-left: 22px;
+    margin-top: 5px;
+}
+
+.col_3 {
+    display: flex;
+}
+
+.skills>ul>h3 {
+    text-wrap: nowrap;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project>ul>li>p {
+    margin-top: 10px;
+    word-break: break-all;
+    word-spacing: 5px;
+}
+
+.padding_right {
+    padding-right: 5px;
+}
+
+table {
+    width: 50%;
+}
+
+table tr td {
+    /* border-bottom: 1px solid var(--navyblue); */
+    padding: 10px 0px;
+}
