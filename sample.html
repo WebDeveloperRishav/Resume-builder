@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CKEditor Example</title>
+    <!-- Include CKEditor library -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+
+</head>
+<style>
+    .ck-off {
+        /* display: none !important; */
+    }
+</style>
+
+<body>
+    <h1>CKEditor Example</h1>
+
+    <!-- Placeholder element for CKEditor -->
+    <!-- <div id="editor"></div> -->
+    <textarea name="" cols="30" rows="10" id="editor" placeholder="this is ck editro"></textarea>
+    <button id="btn">Button</button>
+
+    <script>
+        let myClassiceditor;
+        // let edit = document.querySelector('#btn');
+        let edit = document.querySelector('#editor')
+        ClassicEditor
+            .create(document.querySelector('#editor'))
+
+            .then(editor => { myClassiceditor = editor; })
+            .catch(error => {
+                console.error(error);
+            });
+        edit.addEventListener('keyup', (e) => {
+
+        })
+    </script>
+</body>
+
+</html>

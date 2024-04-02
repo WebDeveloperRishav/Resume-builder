@@ -7,9 +7,10 @@
     <title>Resume of Web Designing</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/print.css" media="print">
 </head>
 
-<body>
+<body class="">
     <div class="overlay"></div>
     <div class="main">
         <header>
@@ -49,14 +50,14 @@
             </div>
         </header>
         <section>
-            <div class=" section summary">
+            <div class="section summary">
                 <div class="title">
                     <i class='bx bx-star'></i>
                     <h2>Summary</h2>
                 </div>
                 <p>
-                    Creative and detail-oriented web designer with [X years] of experience in crafting visually stunning
-                    and user-friendly websites. Proficient in HTML, CSS, and JavaScript, with a strong understanding of
+                    Creative and detail-oriented web designer. Proficient in HTML, CSS, and JavaScript, with a strong
+                    understanding of
                     design principles, usability, and web standards. Skilled in translating client requirements into
                     compelling designs that align with brand identity and user expectations. Experienced in creating
                     responsive and cross-browser compatible layouts to ensure optimal user experience across devices.
@@ -74,8 +75,9 @@
                         <h2>Internships</h2>
                     </div>
                     <div class="subHeading">
-                        <h3>Company :- <span>AssistFin</span></h3>
-                        <h3>Role :- <span>Fronted Developer Intern</span> <i>(Nov 2023 to Mar 2024)</i></h3>
+                        <h3 class="company">Company :- <span>AssistFin</span></h3>
+                        <h3 class="role">Role :- <span>Fronted Developer Intern <i>(Nov 2023 to Mar 2024)</i></span>
+                        </h3>
                     </div>
                     <ul>
                         <li>Interned at Ahead Acit Gaining Practical Experience in Website Development</li>
@@ -273,13 +275,45 @@
                     <input type="type" placeholder="" id="github">
                     <input type="type" placeholder="" id="githubAnchore" class="anchore">
                 </div>
+
+                <div class="input_box">
+                    <label for="">Summary</label>
+                    <input type="text" placeholder="" id="summaryTitle">
+                    <textarea name="" cols="30" rows="10" id="summaryDescription"></textarea>
+                </div>
+                <div class="input_box intershipbox">
+                    <label for="">Internships</label>
+                    <input type="text" placeholder="" id="interTitle">
+                    <input type="text" placeholder="" id="companyName">
+                    <input type="text" placeholder="" id="role">
+
+                    <!-- <textarea name="" cols="30" rows="10" id="interDescription"></textarea> -->
+                    <!-- <span class="btn" id="interbtn">Submit</span> -->
+                </div>
             </form>
         </div>
     </div>
 
     <script src=" https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script> -->
     <script src="assets/js/main.js"></script>
     <script>
+
+        // // Initialize CKEditor
+        // let myEditor;
+        // ClassicEditor
+        //     .create(document.querySelector('#interDescription'))
+        //     .then(editor => { myEditor = editor })
+        //     .catch(error => {
+        //         console.error(error);
+        //     });
+        // // console.log(ClassicEditor)
+        // let interbtn = document.querySelector('#interbtn');
+        // interbtn.addEventListener('click', () => {
+        //     console.log(myEditor.getData());
+        // })
+
+
 
 
 
